@@ -108,12 +108,12 @@ public class main extends javax.swing.JFrame {
         tambahuser.setBounds(179, 72, 209, 50);
 
         hapus.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        hapus.setForeground(new java.awt.Color(51, 204, 0));
-        hapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/deletedata.png"))); // NOI18N
-        hapus.setText("HAPUS DATA");
+        hapus.setForeground(new java.awt.Color(255, 255, 0));
+        hapus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/mesage.png"))); // NOI18N
+        hapus.setText("KIRIM PESAN KE ADMIN");
         hapus.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jPanel1.add(hapus);
-        hapus.setBounds(179, 229, 209, 45);
+        hapus.setBounds(179, 229, 370, 45);
 
         prediksi.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         prediksi.setForeground(new java.awt.Color(51, 204, 0));

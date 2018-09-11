@@ -117,19 +117,19 @@
               <Font name="Tahoma" size="24" style="1"/>
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="cc" red="33" type="rgb"/>
+              <Color blue="0" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/gambar/deletedata.png"/>
+              <Image iconType="3" name="/gambar/mesage.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="HAPUS DATA"/>
+            <Property name="text" type="java.lang.String" value="KIRIM PESAN KE ADMIN"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
             </Property>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="179" y="229" width="-1" height="45"/>
+              <AbsoluteConstraints x="179" y="229" width="370" height="45"/>
             </Constraint>
           </Constraints>
         </Component>
