@@ -30,7 +30,12 @@ public class login_kontroler implements MouseListener{
     }
     @Override
     public void mouseClicked(MouseEvent e) {
-        String command = "select * from user where nama='"+gui.getuser()+"' and pass='"+gui.getpass()+"'";
+        Object source = e.getSource();
+        if (source.equals(gui.getdaftar())){
+            gui.dispose();
+            new daftar_kontroler();
+        }else{
+        String command = "select * from userpass where username='"+gui.getuser()+"' and password='"+gui.getpass()+"'";
         try {
             rs = db.getdata(command);
             if (rs.next() && rs.getString(1).equals(gui.getuser()) && rs.getString(2).equals(gui.getpass())){
@@ -41,6 +46,7 @@ public class login_kontroler implements MouseListener{
                 gui.reset();
             }
         } catch (Exception ae) {
+        }
         }
     }
 

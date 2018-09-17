@@ -5,7 +5,7 @@
  */
 package driver;
 
-import kontroler.main_kontroler;
+import kontroler.login_kontroler;
 
 /**
  *
@@ -13,6 +13,6 @@ import kontroler.main_kontroler;
  */
 public class driver {
     public static void main(String[] args) {
-        new main_kontroler("saya");
+        new login_kontroler();
     }
 }
