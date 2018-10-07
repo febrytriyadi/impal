@@ -9,12 +9,12 @@ package view;
  *
  * @author Administrator
  */
-public class pesanan extends javax.swing.JFrame {
+public class menupegawai extends javax.swing.JFrame {
 
     /**
-     * Creates new form PESANAN
+     * Creates new form menupegawai
      */
-    public pesanan() {
+    public menupegawai() {
         initComponents();
     }
 
@@ -28,10 +28,10 @@ public class pesanan extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
+        tambahuser = new javax.swing.JLabel();
+        lihat = new javax.swing.JLabel();
+        tambah = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
         exit = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
 
@@ -40,33 +40,35 @@ public class pesanan extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(583, 450));
         jPanel1.setLayout(null);
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel2.setText("TOTAL BAYAR");
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(430, 20, 130, 30);
+        tambahuser.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        tambahuser.setForeground(new java.awt.Color(255, 255, 0));
+        tambahuser.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/pegawai.png"))); // NOI18N
+        tambahuser.setText("LIHAT PEGAWAI");
+        tambahuser.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(tambahuser);
+        tambahuser.setBounds(170, 110, 270, 50);
+
+        lihat.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        lihat.setForeground(new java.awt.Color(255, 255, 0));
+        lihat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/kurangpegawai.png"))); // NOI18N
+        lihat.setText("TAMBAH PEGAWAI");
+        lihat.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(lihat);
+        lihat.setBounds(170, 175, 290, 50);
+
+        tambah.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+        tambah.setForeground(new java.awt.Color(255, 255, 0));
+        tambah.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/tambah pegawai1.png"))); // NOI18N
+        tambah.setText("HAPUS PEGAWAI");
+        tambah.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jPanel1.add(tambah);
+        tambah.setBounds(170, 245, 270, 50);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 0));
-        jLabel1.setText("DAFTAR PESANAN");
+        jLabel1.setText("PEGAWAI");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(200, 50, 240, 30);
-
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane1.setViewportView(jTable1);
-
-        jPanel1.add(jScrollPane1);
-        jScrollPane1.setBounds(10, 90, 560, 290);
+        jLabel1.setBounds(210, 50, 140, 30);
 
         exit.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         exit.setForeground(new java.awt.Color(255, 255, 0));
@@ -99,15 +101,15 @@ public class pesanan extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    
+   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel exit;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JLabel lihat;
+    private javax.swing.JLabel tambah;
+    private javax.swing.JLabel tambahuser;
     // End of variables declaration//GEN-END:variables
 }

@@ -12,7 +12,13 @@ import kontroler.login_kontroler;
  * @author Administrator
  */
 public class driver {
+    public static void gen(double a){
+        a=10;
+    }
     public static void main(String[] args) {
-        new login_kontroler();
+        //new login_kontroler
+        double a=0;
+        gen(a);
+        System.out.println(a);
     }
 }
